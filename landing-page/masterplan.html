@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>쵸코쵸코 - 진짜 낸돈내산 초콜릿 리뷰 커뮤니티</title>
+  <meta name="description" content="광고와 협찬에 지친 초코덕후들을 위한 정감 가고 달콤한 초콜릿 전문 리뷰 커뮤니티, 쵸코쵸코입니다." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            choco: {
+              50: '#fdf8f3',
+              100: '#f5e6d3',
+              200: '#e8c9a8',
+              300: '#d4a373',
+              400: '#b07d4b',
+              500: '#8b5e34',
+              600: '#6f4522',
+              700: '#553219',
+              800: '#3b2110',
+              900: '#241308',
+            },
+            cream: '#fffaf5',
+          },
+          fontFamily: {
+            sans: ['"Noto Sans KR"', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .gradient-choco { background: linear-gradient(135deg, #3b2110 0%, #6f4522 50%, #8b5e34 100%); }
+    .text-shadow { text-shadow: 0 2px 8px rgba(0,0,0,0.25); }
+  </style>
+</head>
+<body class="bg-cream text-choco-800 font-sans antialiased">
+
+  <!-- Navigation -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-cream/90 backdrop-blur-md border-b border-choco-100">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#" class="text-2xl font-black text-choco-700 tracking-tight">쵸코쵸코</a>
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium text-choco-600">
+        <a href="#vision" class="hover:text-choco-800 transition">비전</a>
+        <a href="#values" class="hover:text-choco-800 transition">핵심 가치</a>
+        <a href="#roadmap" class="hover:text-choco-800 transition">로드맵</a>
+        <a href="#stack" class="hover:text-choco-800 transition">기술 스택</a>
+        <a href="#risk" class="hover:text-choco-800 transition">위험 대응</a>
+      </div>
+      <a href="#cta" class="bg-choco-600 text-white px-5 py-2 rounded-full text-sm font-bold hover:bg-choco-700 transition">알림 신청</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden">
+    <div class="absolute inset-0 gradient-choco"></div>
+    <div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 24px 24px;"></div>
+    <div class="relative max-w-6xl mx-auto px-6 text-center">
+      <span class="inline-block px-4 py-1.5 mb-6 text-xs md:text-sm font-bold tracking-wider text-choco-100 bg-white/10 rounded-full border border-white/20">
+        🍫 광고 없는 진짜 리뷰만 모입니다
+      </span>
+      <h1 class="text-4xl md:text-6xl lg:text-7xl font-black text-white leading-tight mb-6 text-shadow">
+        시판 가나 초콜릿부터<br />
+        수제 카카오 <span class="text-choco-200">빈투바</span>까지
+      </h1>
+      <p class="text-lg md:text-2xl text-choco-100 max-w-2xl mx-auto mb-10 leading-relaxed">
+        광고와 협찬에 지친 초코덕후들을 위해,<br class="hidden md:block" />
+        진짜 낸돈내산 찐 리뷰만 모이는 정감 가고 달콤한 초콜릿 전문 리뷰 커뮤니티
+      </p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="#cta" class="w-full sm:w-auto px-8 py-4 bg-white text-choco-800 rounded-full font-bold text-lg hover:bg-choco-50 transition shadow-lg">
+          출시 알림 받기
+        </a>
+        <a href="#roadmap" class="w-full sm:w-auto px-8 py-4 bg-choco-700/60 text-white border border-white/30 rounded-full font-bold text-lg hover:bg-choco-700/80 transition">
+          로드맵 보기
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vision -->
+  <section id="vision" class="py-20 md:py-28">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-black text-choco-800 mb-6">프로젝트 비전</h2>
+        <p class="text-2xl md:text-3xl font-bold text-choco-600 leading-snug mb-6">
+          대한민국에서 가장 신뢰할 수 있고<br />정감 넘치는 No.1 초콜릿 리뷰 플랫폼
+        </p>
+        <p class="text-choco-500 text-lg leading-relaxed">
+          쵸코쵸코는 단순한 제품 평가를 넘어, 초콜릿을 사랑하는 사람들이 서로의 경험을 나누고
+          신뢰할 수 있는 정보로 더 나은 선택을 돕는 커뮤니티를 지향합니다.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values -->
+  <section id="values" class="py-20 bg-choco-50">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-black text-choco-800 text-center mb-16">핵심 가치</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-3xl p-8 shadow-sm border border-choco-100 hover:shadow-md transition">
+          <div class="w-14 h-14 bg-choco-100 rounded-2xl flex items-center justify-center text-3xl mb-6">💯</div>
+          <h3 class="text-xl font-bold text-choco-800 mb-3">순도 100% 리얼</h3>
+          <p class="text-choco-500 leading-relaxed">
+            광고성 글을 배제하고 유저들의 솔직한 후기와 진짜 경험만 공유합니다. 낸돈내산 인증으로 신뢰를 만듭니다.
+          </p>
+        </div>
+        <div class="bg-white rounded-3xl p-8 shadow-sm border border-choco-100 hover:shadow-md transition">
+          <div class="w-14 h-14 bg-choco-100 rounded-2xl flex items-center justify-center text-3xl mb-6">🤎</div>
+          <h3 class="text-xl font-bold text-choco-800 mb-3">따뜻한 커뮤니티</h3>
+          <p class="text-choco-500 leading-relaxed">
+            초콜릿이라는 공통 관심사로 묶인 정감 있고 친근한 분위기. 서로를 존중하는 대화가 자연스럽게 이어집니다.
+          </p>
+        </div>
+        <div class="bg-white rounded-3xl p-8 shadow-sm border border-choco-100 hover:shadow-md transition">
+          <div class="w-14 h-14 bg-choco-100 rounded-2xl flex items-center justify-center text-3xl mb-6">🔍</div>
+          <h3 class="text-xl font-bold text-choco-800 mb-3">직관적인 탐색</h3>
+          <p class="text-choco-500 leading-relaxed">
+            당도, 카카오 함량, 식감 등 초콜릿에 특화된 필터링으로 내 취향에 딱 맞는 초콜릿을 빠르게 찾습니다.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Roadmap -->
+  <section id="roadmap" class="py-20 md:py-28">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-black text-choco-800 text-center mb-16">마일스톤 & 로드맵</h2>
+      <div class="relative">
+        <div class="hidden md:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-choco-200 -translate-x-1/2"></div>
+
+        <!-- Phase 1 -->
+        <div class="relative md:flex items-center justify-between mb-16">
+          <div class="md:w-5/12 bg-white rounded-3xl p-8 shadow-sm border border-choco-100">
+            <span class="inline-block px-3 py-1 bg-choco-100 text-choco-700 text-xs font-bold rounded-full mb-4">Phase 1</span>
+            <h3 class="text-2xl font-bold text-choco-800 mb-3">MVP 개발</h3>
+            <p class="text-sm text-choco-400 font-semibold mb-4">1~4주차 · 기반 다지기</p>
+            <p class="text-choco-500 leading-relaxed mb-4">
+              핵심 기능(초콜릿 등록, 찐 리뷰 작성, 소셜 로그인) 구현 및 안정성 검증
+            </p>
+            <ul class="space-y-2 text-choco-600 text-sm">
+              <li class="flex items-start gap-2"><span class="text-choco-400">•</span> 구글/카카오 OAuth 로그인 연동</li>
+              <li class="flex items-start gap-2"><span class="text-choco-400">•</span> 초콜릿 제품 DB 스키마 설계 및 기본 데이터 적재</li>
+              <li class="flex items-start gap-2"><span class="text-choco-400">•</span> 리뷰 작성/조회 및 정감 있는 UI/UX 뼈대 구축</li>
+            </ul>
+          </div>
+          <div class="hidden md:flex absolute left-1/2 -translate-x-1/2 w-10 h-10 bg-choco-500 rounded-full border-4 border-cream items-center justify-center text-white font-bold text-sm">1</div>
+          <div class="md:w-5/12"></div>
+        </div>
+
+        <!-- Phase 2 -->
+        <div class="relative md:flex items-center justify-between mb-16">
+          <div class="md:w-5/12"></div>
+          <div class="hidden md:flex absolute left-1/2 -translate-x-1/2 w-10 h-10 bg-choco-500 rounded-full border-4 border-cream items-center justify-center text-white font-bold text-sm">2</div>
+          <div class="md:w-5/12 bg-white rounded-3xl p-8 shadow-sm border border-choco-100">
+            <span class="inline-block px-3 py-1 bg-choco-100 text-choco-700 text-xs font-bold rounded-full mb-4">Phase 2</span>
+            <h3 class="text-2xl font-bold text-choco-800 mb-3">커뮤니티 활성화</h3>
+            <p class="text-sm text-choco-400 font-semibold mb-4">5~8주차 · 정감 더하기</p>
+            <p class="text-choco-500 leading-relaxed mb-4">
+              유저 간 상호작용 및 정감 있는 분위기를 위한 장치 마련
+            </p>
+            <ul class="space-y-2 text-choco-600 text-sm">
+              <li class="flex items-start gap-2"><span class="text-choco-400">•</span> 댓글, '공감해요(좋아요)' 기능</li>
+              <li class="flex items-start gap-2"><span class="text-choco-400">•</span> 찐리뷰어 인증 마크 및 초코덕후 등급제 도입</li>
+              <li class="flex items-start gap-2"><span class="text-choco-400">•</span> 초콜릿 카테고리별/태그별 큐레이션 기능</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Phase 3 -->
+        <div class="relative md:flex items-center justify-between">
+          <div class="md:w-5/12 bg-white rounded-3xl p-8 shadow-sm border border-choco-100">
+            <span class="inline-block px-3 py-1 bg-choco-100 text-choco-700 text-xs font-bold rounded-full mb-4">Phase 3</span>
+            <h3 class="text-2xl font-bold text-choco-800 mb-3">고도화 및 확장</h3>
+            <p class="text-sm text-choco-400 font-semibold mb-4">9주차 이후 · 서비스 안정화</p>
+            <p class="text-choco-500 leading-relaxed mb-4">
+              서비스 안정화 및 리텐션 강화
+            </p>
+            <ul class="space-y-2 text-choco-600 text-sm">
+              <li class="flex items-start gap-2"><span class="text-choco-400">•</span> 유저 맞춤형 초콜릿 추천 알고리즘 반영</li>
+              <li class="flex items-start gap-2"><span class="text-choco-400">•</span> 월간 '이달의 찐초코' 어워즈 기능</li>
+              <li class="flex items-start gap-2"><span class="text-choco-400">•</span> 모바일 앱(PWA or Flutter) 전환 검토</li>
+            </ul>
+          </div>
+          <div class="hidden md:flex absolute left-1/2 -translate-x-1/2 w-10 h-10 bg-choco-500 rounded-full border-4 border-cream items-center justify-center text-white font-bold text-sm">3</div>
+          <div class="md:w-5/12"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Stack -->
+  <section id="stack" class="py-20 bg-choco-800 text-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-black text-center mb-16">핵심 기술 스택</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-white/10 rounded-2xl p-6 border border-white/10">
+          <div class="text-3xl mb-4">🖥️</div>
+          <h3 class="text-lg font-bold mb-2">Frontend</h3>
+          <p class="text-choco-100 text-sm leading-relaxed">Next.js<br /><span class="text-choco-200/70">Tailwind CSS</span></p>
+        </div>
+        <div class="bg-white/10 rounded-2xl p-6 border border-white/10">
+          <div class="text-3xl mb-4">⚙️</div>
+          <h3 class="text-lg font-bold mb-2">Backend</h3>
+          <p class="text-choco-100 text-sm leading-relaxed">Node.js (NestJS)<br /><span class="text-choco-200/70">or Python (FastAPI)</span></p>
+        </div>
+        <div class="bg-white/10 rounded-2xl p-6 border border-white/10">
+          <div class="text-3xl mb-4">🗄️</div>
+          <h3 class="text-lg font-bold mb-2">Database</h3>
+          <p class="text-choco-100 text-sm leading-relaxed">PostgreSQL<br /><span class="text-choco-200/70">정형 데이터 및 확장성</span></p>
+        </div>
+        <div class="bg-white/10 rounded-2xl p-6 border border-white/10">
+          <div class="text-3xl mb-4">🔐</div>
+          <h3 class="text-lg font-bold mb-2">Auth & Infra</h3>
+          <p class="text-choco-100 text-sm leading-relaxed">NextAuth.js / Passport.js<br /><span class="text-choco-200/70">AWS or Vercel / Supabase</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Risk -->
+  <section id="risk" class="py-20 md:py-28">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-black text-choco-800 text-center mb-16">위험 요인 및 대응 방안</h2>
+      <div class="grid md:grid-cols-2 gap-8 items-stretch">
+        <div class="bg-red-50 rounded-3xl p-8 border border-red-100">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="text-2xl">⚠️</span>
+            <h3 class="text-xl font-bold text-red-900">Risk</h3>
+          </div>
+          <p class="text-red-800 leading-relaxed">
+            광고 대행사나 협찬 글이 유입되어 '찐 리뷰' 분위기가 흐려질 위험이 있습니다. 사용자들의 신뢰를 잃으면 서비스의 근간이 흔들립니다.
+          </p>
+        </div>
+        <div class="bg-green-50 rounded-3xl p-8 border border-green-100">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="text-2xl">🛡️</span>
+            <h3 class="text-xl font-bold text-green-900">Mitigation</h3>
+          </div>
+          <ul class="space-y-3 text-green-800 leading-relaxed">
+            <li class="flex items-start gap-2"><span class="mt-1">•</span> 영수증 인증 기능 도입 검토</li>
+            <li class="flex items-start gap-2"><span class="mt-1">•</span> 유저 신고 시스템 마련 및 명확한 커뮤니티 가이드라인</li>
+            <li class="flex items-start gap-2"><span class="mt-1">•</span> 청정 구역 유지를 위한 초기 집중 모니터링 운영</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="cta" class="py-20 gradient-choco text-white">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-3xl md:text-5xl font-black mb-6">쵸코쵸코의 첫 번째 찐리뷰어가 되어주세요</h2>
+      <p class="text-lg md:text-xl text-choco-100 mb-10">
+        서비스 출시 소식을 가장 먼저 받아보고,<br class="hidden md:block" />
+        초콜릿 덕후들의 따뜻한 커뮤니티를 함께 만들어갑니다.
+      </p>
+      <form class="max-w-md mx-auto flex flex-col sm:flex-row gap-3" onsubmit="event.preventDefault(); alert('출시 알림 신청이 완료되었습니다! 🍫');">
+        <input type="email" required placeholder="이메일을 입력해주세요" class="flex-1 px-6 py-4 rounded-full text-choco-800 placeholder:text-choco-300 focus:outline-none focus:ring-2 focus:ring-choco-200" />
+        <button type="submit" class="px-8 py-4 bg-choco-800 text-white rounded-full font-bold hover:bg-choco-900 transition">
+          알림 신청
+        </button>
+      </form>
+      <p class="mt-4 text-sm text-choco-200/80">출시 시 이메일 한 통으로 알려드릴게요.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-choco-900 text-choco-200 py-10">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="text-2xl font-black text-white">쵸코쵸코</div>
+      <p class="text-sm text-choco-300">© 2026 쵸코쵸코. 모든 초콜릿을 사랑하는 사람들을 위해.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
