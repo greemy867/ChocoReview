@@ -51,6 +51,50 @@
 
 ---
 
-## 5. 제외된 기능 (Out of Scope for MVP)
+## 5. 기술 스택 및 배포 (Tech Stack & Deployment)
+MVP를 빠르게 구축하고 관리하기 위해 **Vercel**과 **Supabase**를 기반으로 합니다.
+
+### 5.1. 핵심 기술 스택
+* **Frontend**: Next.js 14 (App Router), TypeScript, Tailwind CSS
+  * SEO와 빠른 초기 로딩을 위해 SSR/SSG 적극 활용
+  * 친근하고 따뜻한 UI를 위한 Tailwind CSS 기반 디자인 시스템
+* **Backend**: Next.js API Routes + Supabase Edge Functions (필요 시)
+  * MVP 단계에서는 Next.js API Routes로 간단하게 처리
+  * 복잡한 비즈니스 로직이 생기면 Supabase Edge Functions 확장 검토
+* **Database**: Supabase PostgreSQL
+  * 초콜릿 제품, 사용자, 리뷰, 댓글, 공감 등 정형 데이터 관리
+  * Row Level Security(RLS)로 데이터 접근 권한 제어
+* **Authentication**: Supabase Auth
+  * 구글, 카카오 OAuth 2.0 소셜 로그인 연동
+  * 가입 시 랜덤 초코덕후 닉네임 자동 생성
+* **Storage**: Supabase Storage
+  * 리뷰 사진, 영수증 인증 이미지, 프로필 이미지 등 업로드
+  * 이미지는 WebP 변환 및 압축 후 저장
+* **Image Optimization**
+  * Next.js Image 컴포넌트 + WebP 포맷 + Lazy Loading
+  * 초콜릿 사진 로딩 속도 최적화
+
+### 5.2. 배포 및 운영
+* **Hosting / CI-CD**: Vercel
+  * GitHub main 브랜치 push 시 자동 배포
+  * Preview Deployment로 PR 단계에서 미리보기 가능
+* **Database / Auth / Storage Hosting**: Supabase
+  * 관리형 PostgreSQL로 운영 부담 최소화
+  * Auth, Storage를 한 곳에서 통합 관리
+* **Environment Variables**
+  * `NEXT_PUBLIC_SUPABASE_URL`
+  * `NEXT_PUBLIC_SUPABASE_ANON_KEY`
+  * `SUPABASE_SERVICE_ROLE_KEY` (서버 사이드 전용, 절대 노출 금지)
+  * OAuth Provider Secret (Google, Kakao)
+
+### 5.3. 선정 이유
+* **빠른 MVP 출시**: Vercel + Supabase 조합으로 인프라 세팅 시간을 최소화
+* **비용 효율**: 초기 무료 이용량 기준으로 비용 부담이 적음
+* **확장성**: 사용자가 늘어나면 Supabase Pro, Vercel Pro 등으로 단계적 확장 가능
+* **개발자 경험**: TypeScript 기반의 통합 DX로 생산성 향상
+
+---
+
+## 6. 제외된 기능 (Out of Scope for MVP)
 * 자체 커머스 및 결제 기능 (MVP 단계에서는 순수 리뷰/커뮤니티 집중)
 * 유저 간 1:1 다이렉트 메시지(DM) 기능
