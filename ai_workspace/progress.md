@@ -15,3 +15,8 @@
 - 귀여운 초콜릿 테마의 랜딩페이지를 Next.js 컴포넌트(`/app/page.tsx`)로 마이그레이션
 - `npm run build` 정상 통과 확인
 - feature branch `feature/setup-project`에 작업 중
+
+## 이슈 등록
+- GitHub Issue #1: [MVP] 구글/카카오 소셜 로그인 연동 등록
+  - https://github.com/greemy867/ChocoReview/issues/1
+  - PRD 3.1 / Masterplan Phase 1 기반 MVP 우선 과제

@@ -28,8 +28,8 @@ export default function Home() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
-              href="#start"
-              className="cute-btn w-full sm:w-auto px-10 py-4 bg-lemon text-choco-900 font-black text-lg hover:bg-yellow-200 transition"
+              href="/login"
+              className="cute-btn w-full sm:w-auto px-12 py-4 bg-lemon text-choco-900 font-black text-lg hover:bg-yellow-200 transition"
             >
               물론이죠, 시작할래요 🚀
             </a>
@@ -139,10 +139,10 @@ export default function Home() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
-              href="#"
+              href="/login"
               className="cute-btn w-full sm:w-auto px-12 py-4 bg-lemon text-choco-900 font-black text-lg hover:bg-yellow-200 transition"
             >
-              무료로 가입하기 🍫
+              물론이죠, 시작할래요 🍫
             </a>
             <a
               href="#features"
