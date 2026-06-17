@@ -20,3 +20,9 @@
 - GitHub Issue #1: [MVP] 구글/카카오 소셜 로그인 연동 등록
   - https://github.com/greemy867/ChocoReview/issues/1
   - PRD 3.1 / Masterplan Phase 1 기반 MVP 우선 과제
+
+## 진행 중인 작업
+- GitHub PR #2: 구글/카카오 소셜 로그인 연동
+  - https://github.com/greemy867/ChocoReview/pull/2
+  - `/login` 페이지, `/auth/callback` 처리, Header 컴포넌트, 랜덤 닉네임 생성 구현
+  - feature branch `feature/social-login`에 작업 완료, PR 리뷰 대기 중
