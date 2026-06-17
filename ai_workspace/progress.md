@@ -15,3 +15,13 @@
 - 귀여운 초콜릿 테마의 랜딩페이지를 Next.js 컴포넌트(`/app/page.tsx`)로 마이그레이션
 - `npm run build` 정상 통과 확인
 - feature branch `feature/setup-project`에 작업 중
+
+## 이슈 등록
+- GitHub Issue #3: [MVP] 초콜릿 제품 DB 스키마 설계 및 기본 데이터 적재 등록
+  - https://github.com/greemy867/ChocoReview/issues/3
+  - PRD 3.2 ~ 3.4 / Masterplan Phase 1 기반 MVP 데이터 모델링
+
+## 진행 중인 작업
+- 초콜릿 제품 DB 스키마 마이그레이션 작성
+  - `supabase/migrations/20260617052100_initial_schema.sql`
+  - profiles, categories, products, reviews, reactions 테이블 및 RLS 정책
