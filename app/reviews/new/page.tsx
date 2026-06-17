@@ -4,10 +4,15 @@ import { getProducts } from '@/lib/products'
 import ReviewForm from './ReviewForm'
 
 export default async function NewReviewPage() {
-  const supabase = createClient()
-  const {
-    data: { user },
-  } = await supabase.auth.getUser()
+  let user = null
+
+  try {
+    const supabase = createClient()
+    const { data } = await supabase.auth.getUser()
+    user = data.user
+  } catch (err) {
+    console.error('Supabase client is not configured:', err)
+  }
 
   if (!user) {
     redirect('/login')
