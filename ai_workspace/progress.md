@@ -27,3 +27,7 @@
   - `/products/[id]` 제품 상세 + 리뷰 목록 페이지
   - `RatingChocochips`, `TagSelector`, `ReviewCard` 컴포넌트
   - `lib/products.ts`, `lib/reviews.ts` 데이터 조회 유틸
+- GitHub PR #6: 찐 리뷰 작성 및 조회 기능 구현
+  - https://github.com/greemy867/ChocoReview/pull/6
+  - feature branch `feature/reviews`에 작업 완료, PR 리뷰 대기 중
+  - Vercel 배포 실패 대응: Supabase 환경 변수 누락 시에도 빌드가 통과하도록 graceful 처리
