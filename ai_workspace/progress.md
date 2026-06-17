@@ -25,3 +25,6 @@
 - 초콜릿 제품 DB 스키마 마이그레이션 작성
   - `supabase/migrations/20260617052100_initial_schema.sql`
   - profiles, categories, products, reviews, reactions 테이블 및 RLS 정책
+- GitHub PR #4: 초콜릿 제품 DB 스키마 설계 및 기본 데이터 적재
+  - https://github.com/greemy867/ChocoReview/pull/4
+  - feature branch `feature/db-schema`에 작업 완료, PR 리뷰 대기 중
