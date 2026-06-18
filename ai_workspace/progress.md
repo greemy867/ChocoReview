@@ -27,3 +27,6 @@
   - `/reviews/[id]` 리뷰 상세 페이지
   - `CommentForm`, `CommentList`, `ReactionButtons` 컴포넌트
   - `lib/comments.ts`, `lib/reviews.ts` 데이터 조회 유틸
+- GitHub PR #12: 댓글 및 공감(좋아요) 기능 구현
+  - https://github.com/greemy867/ChocoReview/pull/12
+  - feature branch `feature/comments-reactions`에 작업 완료, PR 리뷰 대기 중
