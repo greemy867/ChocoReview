@@ -27,3 +27,6 @@
   - `ImageUploader` 컴포넌트 (다중 업로드, 미리보기, 삭제)
   - `ImageGallery` 컴포넌트 (lazy loading, 라이트박스)
   - `/upload-test` 데모 페이지
+- GitHub PR #14: 리뷰 이미지 업로드 및 최적화
+  - https://github.com/greemy867/ChocoReview/pull/14
+  - feature branch `feature/image-upload`에 작업 완료, PR 리뷰 대기 중
