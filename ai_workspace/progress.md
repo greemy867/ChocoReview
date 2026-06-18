@@ -15,3 +15,18 @@
 - 귀여운 초콜릿 테마의 랜딩페이지를 Next.js 컴포넌트(`/app/page.tsx`)로 마이그레이션
 - `npm run build` 정상 통과 확인
 - feature branch `feature/setup-project`에 작업 중
+
+## 이슈 등록
+- GitHub Issue #7: [MVP] 초콜릿 제품 탐색 및 필터 기능 등록
+  - https://github.com/greemy867/ChocoReview/issues/7
+  - PRD 3.2 / Masterplan Phase 1 기반 제품 탐색 기능
+
+## 진행 중인 작업
+- 초콜릿 제품 탐색 및 필터 기능 구현
+  - `/products` 제품 목록 페이지
+  - `ProductCard`, `FilterPanel` 컴포넌트
+  - 카테고리 / 카카오 함량 / 맛·식감 태그 필터 및 정렬/검색
+  - `lib/products.ts` 데이터 조회 유틸 확장
+- GitHub PR #8: 초콜릿 제품 탐색 및 필터 기능
+  - https://github.com/greemy867/ChocoReview/pull/8
+  - feature branch `feature/product-exploration`에 작업 완료, PR 리뷰 대기 중
