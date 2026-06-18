@@ -15,3 +15,22 @@
 - 귀여운 초콜릿 테마의 랜딩페이지를 Next.js 컴포넌트(`/app/page.tsx`)로 마이그레이션
 - `npm run build` 정상 통과 확인
 - feature branch `feature/setup-project`에 작업 중
+
+## 이슈 등록
+- GitHub Issue #5: [MVP] 찐 리뷰 작성 및 조회 기능 구현 등록
+  - https://github.com/greemy867/ChocoReview/issues/5
+  - PRD 3.3 / Masterplan Phase 1 기반 핵심 기능
+- GitHub Issue #7: [MVP] 초콜릿 제품 탐색 및 필터 기능 등록
+  - https://github.com/greemy867/ChocoReview/issues/7
+  - PRD 3.2 / Masterplan Phase 1 기반 제품 탐색 기능
+
+## 진행 중인 작업
+- 찐 리뷰 작성 및 조회 기능 구현
+  - `/reviews/new` 페이지 + Server Action
+  - `/products/[id]` 제품 상세 + 리뷰 목록 페이지
+  - `RatingChocochips`, `TagSelector`, `ReviewCard` 컴포넌트
+  - `lib/products.ts`, `lib/reviews.ts` 데이터 조회 유틸
+- GitHub PR #6: 찐 리뷰 작성 및 조회 기능 구현
+  - https://github.com/greemy867/ChocoReview/pull/6
+  - feature branch `feature/reviews`에 작업 완료, PR 리뷰 대기 중
+  - Vercel 배포 실패 대응: Supabase 환경 변수 누락 시에도 빌드가 통과하도록 graceful 처리
