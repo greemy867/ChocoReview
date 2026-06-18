@@ -20,6 +20,9 @@
 - GitHub Issue #5: [MVP] 찐 리뷰 작성 및 조회 기능 구현 등록
   - https://github.com/greemy867/ChocoReview/issues/5
   - PRD 3.3 / Masterplan Phase 1 기반 핵심 기능
+- GitHub Issue #7: [MVP] 초콜릿 제품 탐색 및 필터 기능 등록
+  - https://github.com/greemy867/ChocoReview/issues/7
+  - PRD 3.2 / Masterplan Phase 1 기반 제품 탐색 기능
 
 ## 진행 중인 작업
 - 찐 리뷰 작성 및 조회 기능 구현
