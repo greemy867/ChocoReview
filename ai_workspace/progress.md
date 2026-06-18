@@ -15,3 +15,15 @@
 - 귀여운 초콜릿 테마의 랜딩페이지를 Next.js 컴포넌트(`/app/page.tsx`)로 마이그레이션
 - `npm run build` 정상 통과 확인
 - feature branch `feature/setup-project`에 작업 중
+
+## 이슈 등록
+- GitHub Issue #13: [MVP] 리뷰 이미지 업로드 및 최적화 등록
+  - https://github.com/greemy867/ChocoReview/issues/13
+  - PRD 5.1 / PRD 3.3 기반 이미지 업로드 기능
+
+## 진행 중인 작업
+- 리뷰 이미지 업로드 및 최적화 구현
+  - `lib/image-upload.ts` 이미지 리사이즈/WebP 변환/업로드 유틸
+  - `ImageUploader` 컴포넌트 (다중 업로드, 미리보기, 삭제)
+  - `ImageGallery` 컴포넌트 (lazy loading, 라이트박스)
+  - `/upload-test` 데모 페이지
