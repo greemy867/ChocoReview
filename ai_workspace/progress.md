@@ -15,3 +15,16 @@
 - 귀여운 초콜릿 테마의 랜딩페이지를 Next.js 컴포넌트(`/app/page.tsx`)로 마이그레이션
 - `npm run build` 정상 통과 확인
 - feature branch `feature/setup-project`에 작업 중
+
+## 이슈 등록
+- GitHub Issue #9: [MVP] 마이페이지 및 초코 등급제 구현 등록
+  - https://github.com/greemy867/ChocoReview/issues/9
+  - PRD 3.4 / Masterplan Phase 1 기반 사용자 기능
+
+## 진행 중인 작업
+- 마이페이지 및 초코 등급제 구현
+  - `/mypage` 페이지 (프로필, 등급, 내 리뷰 목록)
+  - `ProfileForm` 닉네임 수정 컴포넌트
+  - `lib/grade.ts` 등급 계산 유틸
+  - `lib/reviews.ts` 사용자별 리뷰 조회
+  - Header 컴포넌트에 마이페이지/탐색 링크 추가
