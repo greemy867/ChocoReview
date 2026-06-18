@@ -15,3 +15,15 @@
 - 귀여운 초콜릿 테마의 랜딩페이지를 Next.js 컴포넌트(`/app/page.tsx`)로 마이그레이션
 - `npm run build` 정상 통과 확인
 - feature branch `feature/setup-project`에 작업 중
+
+## 이슈 등록
+- GitHub Issue #11: [Phase 2] 댓글 및 공감(좋아요) 기능 구현 등록
+  - https://github.com/greemy867/ChocoReview/issues/11
+  - Masterplan Phase 2 기반 커뮤니티 상호작용 기능
+
+## 진행 중인 작업
+- 댓글 및 공감 기능 구현
+  - `supabase/migrations/20260617060000_add_comments.sql` comments 테이블 추가
+  - `/reviews/[id]` 리뷰 상세 페이지
+  - `CommentForm`, `CommentList`, `ReactionButtons` 컴포넌트
+  - `lib/comments.ts`, `lib/reviews.ts` 데이터 조회 유틸
