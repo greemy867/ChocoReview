@@ -27,3 +27,6 @@
   - `ProductCard`, `FilterPanel` 컴포넌트
   - 카테고리 / 카카오 함량 / 맛·식감 태그 필터 및 정렬/검색
   - `lib/products.ts` 데이터 조회 유틸 확장
+- GitHub PR #8: 초콜릿 제품 탐색 및 필터 기능
+  - https://github.com/greemy867/ChocoReview/pull/8
+  - feature branch `feature/product-exploration`에 작업 완료, PR 리뷰 대기 중
