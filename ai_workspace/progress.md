@@ -28,3 +28,6 @@
   - `lib/grade.ts` 등급 계산 유틸
   - `lib/reviews.ts` 사용자별 리뷰 조회
   - Header 컴포넌트에 마이페이지/탐색 링크 추가
+- GitHub PR #10: 마이페이지 및 초코 등급제 구현
+  - https://github.com/greemy867/ChocoReview/pull/10
+  - feature branch `feature/mypage`에 작업 완료, PR 리뷰 대기 중
