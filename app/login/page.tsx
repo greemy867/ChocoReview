@@ -3,7 +3,7 @@
 import { createClient } from '@/lib/supabase/client'
 
 export default function LoginPage() {
-  const signInWithProvider = async (provider: 'google' | 'kakao') => {
+  const signInWithProvider = async (provider: 'google') => {
     const supabase = createClient()
     const { error } = await supabase.auth.signInWithOAuth({
       provider,
@@ -35,13 +35,6 @@ export default function LoginPage() {
           >
             <span className="text-xl">🔍</span>
             Google로 계속하기
-          </button>
-          <button
-            onClick={() => signInWithProvider('kakao')}
-            className="cute-btn w-full flex items-center justify-center gap-3 px-6 py-4 bg-[#FEE500] text-[#3C1E1E] font-bold text-base hover:bg-[#F6D900] transition"
-          >
-            <span className="text-xl">💬</span>
-            Kakao로 계속하기
           </button>
         </div>
 
