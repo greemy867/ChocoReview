@@ -19,9 +19,9 @@
 ## 3. 핵심 기능 요구사항 (Functional Requirements)
 
 ### 3.1. 회원가입 및 로그인 (Authentication)
-* **[필수] 구글, 카카오 소셜 로그인 (OAuth 2.0)**
+* **[필수] 구글 소셜 로그인 (OAuth 2.0)**
   * 복잡한 이메일 인증 없이 3초 만에 가입 가능해야 함.
-  * 가입 시 초기 닉네임은 친근한 형태(예: *달콤한카카오32호*, *가나초코덕후*)로 자동 생성 후 변경 유도.
+  * 가입 시 초기 닉네임은 친근한 형태(예: *가나초코덕후*)로 자동 생성 후 변경 유도.
 
 ### 3.2. 초콜릿 제품 탐색
 * **제품 카테고리 분화**: 
@@ -65,7 +65,7 @@ MVP를 빠르게 구축하고 관리하기 위해 **Vercel**과 **Supabase**를 
   * 초콜릿 제품, 사용자, 리뷰, 댓글, 공감 등 정형 데이터 관리
   * Row Level Security(RLS)로 데이터 접근 권한 제어
 * **Authentication**: Supabase Auth
-  * 구글, 카카오 OAuth 2.0 소셜 로그인 연동
+  * 구글 OAuth 2.0 소셜 로그인 연동
   * 가입 시 랜덤 초코덕후 닉네임 자동 생성
 * **Storage**: Supabase Storage
   * 리뷰 사진, 영수증 인증 이미지, 프로필 이미지 등 업로드
@@ -85,7 +85,7 @@ MVP를 빠르게 구축하고 관리하기 위해 **Vercel**과 **Supabase**를 
   * `NEXT_PUBLIC_SUPABASE_URL`
   * `NEXT_PUBLIC_SUPABASE_ANON_KEY`
   * `SUPABASE_SERVICE_ROLE_KEY` (서버 사이드 전용, 절대 노출 금지)
-  * OAuth Provider Secret (Google, Kakao)
+  * OAuth Provider Secret (Google)
 
 ### 5.3. 선정 이유
 * **빠른 MVP 출시**: Vercel + Supabase 조합으로 인프라 세팅 시간을 최소화
