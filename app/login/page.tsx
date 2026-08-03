@@ -7,7 +7,7 @@ export default function LoginPage() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  async function signInWith(provider: "google" | "kakao") {
+  async function signInWith(provider: "google") {
     setLoading(true);
     setError(null);
     try {
@@ -54,13 +54,6 @@ export default function LoginPage() {
             className="w-full flex items-center justify-center gap-3 px-6 py-4 bg-white border-2 border-choco-100 rounded-2xl font-bold text-choco-800 hover:bg-choco-50 transition disabled:opacity-50"
           >
             <span className="text-xl">🔍</span> 구글로 계속하기
-          </button>
-          <button
-            onClick={() => signInWith("kakao")}
-            disabled={loading}
-            className="w-full flex items-center justify-center gap-3 px-6 py-4 bg-lemon rounded-2xl font-bold text-choco-900 hover:bg-yellow-200 transition disabled:opacity-50"
-          >
-            <span className="text-xl">💬</span> 카카오로 계속하기
           </button>
         </div>
 
