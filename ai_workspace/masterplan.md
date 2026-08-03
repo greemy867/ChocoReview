@@ -19,7 +19,7 @@
 ### 📅 Phase 1: MVP 개발 (기반 다지기) - 1~4주차
 * **목표**: 핵심 기능(초콜렛 등록, 찐 리뷰 작성, 소셜 로그인) 구현 및 안정성 검증
 * **주요 과제**:
-  * 구글/카카오 OAuth 로그인 연동
+  * 구글 OAuth 로그인 연동
   * 초콜렛 제품 DB 스키마 설계 및 기본 데이터 적재
   * 리뷰 작성/조회 및 정감 있는 UI/UX 뼈대 구축
 
@@ -43,7 +43,7 @@
 * **Frontend**: Next.js (SEO 및 빠른 초기 로딩), Tailwind CSS (따뜻하고 정감 있는 컬러감 구현)
 * **Backend**: Node.js (NestJS) or Python (FastAPI)
 * **Database**: PostgreSQL (정형 데이터 및 확장성 확보)
-* **Authentication**: NextAuth.js 또는 Passport.js (구글/카카오 OAuth 2.0)
+* **Authentication**: NextAuth.js 또는 Passport.js (구글 OAuth 2.0)
 * **Infrastructure**: AWS or Vercel / Supabase (빠른 MVP 출시용)
 
 ---
